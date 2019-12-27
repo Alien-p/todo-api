@@ -1,8 +1,8 @@
 import React from 'react';
 
-function TodoItem({name}) {
+function TodoItem({name, completed}) {
   return(
-    <li>{name}</li>
+    <li style={{textDecoration: completed ? 'line-through' : 'none'}}>{name}</li>
   )
 }
 
